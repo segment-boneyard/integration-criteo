@@ -9,6 +9,7 @@
     "test": "make test"
   },
   "dependencies": {
+    "@ndhoule/foldl": "^2.0.1",
     "batch": "^0.5.3",
     "extend": "^2.0.0",
     "flat": "^1.6.0",

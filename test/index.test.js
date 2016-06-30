@@ -74,6 +74,14 @@ describe('Criteo', function(){
       it('should map application opened with email', function(){
         test.maps('track-app-opened-w-email');
       });
+
+      it('should map product list viewed', function(){
+        test.maps('track-product-list-viewed');
+      });
+
+      it('should map product viewed', function(){
+        test.maps('track-product-viewed');
+      });
     });
   });
 
@@ -98,6 +106,24 @@ describe('Criteo', function(){
 
     it('should track Application Opened with Email correctly', function(done){
       var data = test.fixture('track-app-opened-w-email');
+      test
+        .track(data.input)
+        .query(data.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track Product List Viewed correctly', function(done){
+      var data = test.fixture('track-product-list-viewed');
+      test
+        .track(data.input)
+        .query(data.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track Product Viewed correctly', function(done){
+      var data = test.fixture('track-product-viewed');
       test
         .track(data.input)
         .query(data.output)

@@ -1,0 +1,57 @@
+{
+  "input": {
+    "type": "track",
+    "event": "Product List Viewed",
+    "userId": "user-id",
+    "properties": {
+    	"listId": "hot deals",
+    	"category": "deals",
+    	"products": [
+          { "id": "507f1f77bcf86cd799439011" },
+          { "id": "505bd76785ebb509fc183733" }
+    	]
+    },
+    "timestamp": "2015-11-09",
+    "context": {
+      "ip": "10.0.0.2",
+      "app": {
+        "namespace": "com.segment.TestApp",
+        "version": 2
+      },
+      "device": {
+        "manufacturer": "some-brand",
+        "type": "ios",
+        "advertisingId": "159358",
+        "id": "123"
+      },
+      "network": { "carrier": "some-carrier" },
+      "locale": "en-US",
+      "library": {
+        "name": "analytics-ios"
+      },
+      "os": {
+        "name": "iOS"
+      },
+      "referrer": {
+        "type": "iad",
+        "id": "some-id"
+      }
+    }
+  },
+  "output": {
+   "account": {
+      "an": "com.segment.TestApp",
+      "cn": "us",
+      "ln": "en"
+    },
+    "site_type": "aios",
+    "id": { "idfa": "123" },
+    "events": [
+      { "event": "viewListing",
+      "ci": "user-id",
+      "product": [ "507f1f77bcf86cd799439011", "505bd76785ebb509fc183733" ]
+       }
+    ],
+    "version": "s2s_v1.0.0"
+  }
+}

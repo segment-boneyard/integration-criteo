@@ -82,6 +82,14 @@ describe('Criteo', function(){
       it('should map product viewed', function(){
         test.maps('track-product-viewed');
       });
+
+      it('should map cart viewed', function(){
+        test.maps('track-cart-viewed');
+      });
+
+      it('should map order completed', function(){
+        test.maps('track-order-completed');
+      });
     });
   });
 
@@ -124,6 +132,24 @@ describe('Criteo', function(){
 
     it('should track Product Viewed correctly', function(done){
       var data = test.fixture('track-product-viewed');
+      test
+        .track(data.input)
+        .query(data.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track Cart Viewed correctly', function(done){
+      var data = test.fixture('track-cart-viewed');
+      test
+        .track(data.input)
+        .query(data.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track Order Completed correctly', function(done){
+      var data = test.fixture('track-order-completed');
       test
         .track(data.input)
         .query(data.output)

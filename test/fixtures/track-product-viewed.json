@@ -4,7 +4,7 @@
     "event": "Product Viewed",
     "userId": "user-id",
     "properties": {
-      "product_id": "507f1f77bcf86cd799439011",
+      "product_id": "1",
       "sku": "G-32",
       "category": "Games",
       "name": "Monopoly: 3rd Edition",
@@ -27,7 +27,7 @@
         "manufacturer": "some-brand",
         "type": "ios",
         "advertisingId": "159358",
-        "id": "123"
+        "id": "CECBF993-BA22-4BBF-9DE2-04DE813505CF"
       },
       "network": { "carrier": "some-carrier" },
       "locale": "en-US",
@@ -50,13 +50,12 @@
       "ln": "en"
     },
     "site_type": "aios",
-    "id": { "idfa": "123" },
-    "events": [
-      { "event": "viewProduct",
-        "ci": "user-id",
-        "product": "507f1f77bcf86cd799439011"
-       }
-    ],
+    "id": { "idfa": "CECBF993-BA22-4BBF-9DE2-04DE813505CF" },
+    "events": {
+      "event": "viewProduct",
+      "ci": "user-id",
+      "product": "1"
+    },
     "version": "s2s_v1.0.0"
   }
 }

@@ -98,7 +98,7 @@ describe('Criteo', function(){
       var data = test.fixture('track-basic');
       test
         .track(data.input)
-        .query(data.output)
+        .sends(data.output)
         .expects(200)
         .end(done);
     });
@@ -107,7 +107,7 @@ describe('Criteo', function(){
       var data = test.fixture('track-app-opened');
       test
         .track(data.input)
-        .query(data.output)
+        .sends(data.output)
         .expects(200)
         .end(done);
     });
@@ -116,7 +116,7 @@ describe('Criteo', function(){
       var data = test.fixture('track-app-opened-w-email');
       test
         .track(data.input)
-        .query(data.output)
+        .sends(data.output)
         .expects(200)
         .end(done);
     });
@@ -125,7 +125,7 @@ describe('Criteo', function(){
       var data = test.fixture('track-product-list-viewed');
       test
         .track(data.input)
-        .query(data.output)
+        .sends(data.output)
         .expects(200)
         .end(done);
     });
@@ -134,7 +134,7 @@ describe('Criteo', function(){
       var data = test.fixture('track-product-viewed');
       test
         .track(data.input)
-        .query(data.output)
+        .sends(data.output)
         .expects(200)
         .end(done);
     });
@@ -143,16 +143,20 @@ describe('Criteo', function(){
       var data = test.fixture('track-cart-viewed');
       test
         .track(data.input)
-        .query(data.output)
+        .sends(data.output)
         .expects(200)
-        .end(done);
+        .end(function(err, res){
+          if (err) console.log({err: err});
+          if (res) console.log({res: res});
+          done();
+        });
     });
 
     it('should track Order Completed correctly', function(done){
       var data = test.fixture('track-order-completed');
       test
         .track(data.input)
-        .query(data.output)
+        .sends(data.output)
         .expects(200)
         .end(done);
     });

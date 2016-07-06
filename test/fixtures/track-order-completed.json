@@ -16,7 +16,7 @@
       "repeat": true,
       "products": [
         {
-          "id": "507f1f77bcf86cd799439011",
+          "id": "1",
           "sku": "45790-32",
           "name": "Monopoly: 3rd Edition",
           "price": 19,
@@ -24,7 +24,7 @@
           "category": "Games"
         },
         {
-          "id": "505bd76785ebb509fc183733",
+          "id": "2",
           "sku": "46493-32",
           "name": "Uno Card Game",
           "price": 3,
@@ -40,7 +40,7 @@
         "manufacturer": "some-brand",
         "type": "ios",
         "advertisingId": "159358",
-        "id": "123"
+        "id": "CECBF993-BA22-4BBF-9DE2-04DE813505CF"
       },
       "network": { "carrier": "some-carrier" },
       "locale": "en-US",
@@ -63,18 +63,16 @@
       "ln": "en"
     },
     "site_type": "aios",
-    "id": { "idfa": "123" },
-    "events": [
-      { 
-        "event": "trackTransaction",
-        "ci": "user-id",
-        "currency": "USD",
-        "product": [
-          { "id": "507f1f77bcf86cd799439011", "price": 19, "quantity": 1 },
-          { "id": "505bd76785ebb509fc183733", "price": 3, "quantity": 2 }
-        ]
-      }
-    ],
+    "id": { "idfa": "CECBF993-BA22-4BBF-9DE2-04DE813505CF" },
+    "events": { 
+      "event": "trackTransaction",
+      "ci": "user-id",
+      "currency": "USD",
+      "product": [
+        { "id": "1", "price": 19, "quantity": 1 },
+        { "id": "2", "price": 3, "quantity": 2 }
+      ]
+    },
     "version": "s2s_v1.0.0"
   }
 }

@@ -6,8 +6,8 @@
     "properties": {
     	"cartId": "d92jd29jd92jd29j92d92jd",
     	  "products": [
-    	    { "productId": "507f1f77bcf86cd799439011" },
-    	    { "productId": "505bd76785ebb509fc183733" }
+    	    { "productId": "1" },
+    	    { "productId": "2" }
     	  ]
     },
     "timestamp": "2015-11-09",
@@ -21,7 +21,7 @@
         "manufacturer": "some-brand",
         "type": "ios",
         "advertisingId": "159358",
-        "id": "123"
+        "id": "CECBF993-BA22-4BBF-9DE2-04DE813505CF"
       },
       "network": { "carrier": "some-carrier" },
       "locale": "en-US",
@@ -44,18 +44,16 @@
       "ln": "en"
     },
     "site_type": "aios",
-    "id": { "idfa": "123" },
-    "events": [
-      { 
-      	"event": "viewBasket",
-        "ci": "user-id",
-        "currency": "USD",
-        "product": [
-        	{ "id": "507f1f77bcf86cd799439011" },
-        	{ "id": "505bd76785ebb509fc183733" }
-        ]
-      }
-    ],
+    "id": { "idfa": "CECBF993-BA22-4BBF-9DE2-04DE813505CF" },
+    "events": { 
+      "event": "viewBasket",
+      "ci": "user-id",
+      "currency": "USD",
+      "product": [
+      	{ "id": "1" },
+      	{ "id": "2" }
+      ]
+    },
     "version": "s2s_v1.0.0"
   }
 }

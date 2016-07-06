@@ -15,7 +15,7 @@
         "manufacturer": "some-brand",
         "type": "ios",
         "advertisingId": "159358",
-        "id": 123
+        "id": "CECBF993-BA22-4BBF-9DE2-04DE813505CF"
       },
       "network": { "carrier": "some-carrier" },
       "locale": "en-US",
@@ -41,7 +41,7 @@
       "ln": "en"
     },
     "site_type": "aios",
-    "id": { "idfa": "123" },
+    "id": { "idfa": "CECBF993-BA22-4BBF-9DE2-04DE813505CF" },
     "events": [
       { "event": "viewHome", "ci": "user-id" },
       { "event": "setHashedEmail", "email":["780f333ed11dc031fd5ab1edeff79b97"]}

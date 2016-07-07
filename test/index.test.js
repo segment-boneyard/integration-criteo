@@ -139,13 +139,13 @@ describe('Criteo', function(){
         .end(done);
     });
 
-    it('should track Cart Viewed correctly', function(done){
+    it.only('should track Cart Viewed correctly', function(done){
       var data = test.fixture('track-cart-viewed');
       test
         .track(data.input)
         .sends(data.output)
         .expects(200)
-        .end(function(err, res){
+        .end(function(err, res) {
           if (err) console.log({err: err});
           if (res) console.log({res: res});
           done();

@@ -4,11 +4,11 @@
     "event": "Cart Viewed",
     "userId": "user-id",
     "properties": {
-    	"cartId": "d92jd29jd92jd29j92d92jd",
-    	  "products": [
-    	    { "productId": "1" },
-    	    { "productId": "2" }
-    	  ]
+      "cartId": "d92jd29jd92jd29j92d92jd",
+        "products": [
+          { "productId": "1", "price": "19", "quantity": "1" },
+          { "productId": "2", "price": "3", "quantity": "2" }
+        ]
     },
     "timestamp": "2015-11-09",
     "context": {
@@ -21,7 +21,7 @@
         "manufacturer": "some-brand",
         "type": "ios",
         "advertisingId": "159358",
-        "id": "CECBF993-BA22-4BBF-9DE2-04DE813505CF"
+        "id": "CECBF993-BA22-4BBF-9DE2-04DE813505CA"
       },
       "network": { "carrier": "some-carrier" },
       "locale": "en-US",
@@ -38,20 +38,20 @@
     }
   },
   "output": {
-   "account": {
+    "account": {
       "an": "com.segment.TestApp",
       "cn": "us",
       "ln": "en"
     },
     "site_type": "aios",
-    "id": { "idfa": "CECBF993-BA22-4BBF-9DE2-04DE813505CF" },
+    "id": { "idfa": "CECBF993-BA22-4BBF-9DE2-04DE813505CA" },
     "events": { 
       "event": "viewBasket",
       "ci": "user-id",
       "currency": "USD",
       "product": [
-      	{ "id": "1" },
-      	{ "id": "2" }
+        { "id": "1", "price": 19, "quantity": 1 },
+        { "id": "2", "price": 3, "quantity": 2 }
       ]
     },
     "version": "s2s_v1.0.0"

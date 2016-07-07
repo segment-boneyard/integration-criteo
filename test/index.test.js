@@ -90,6 +90,10 @@ describe('Criteo', function(){
       it('should map order completed', function(){
         test.maps('track-order-completed');
       });
+
+      it('should map events with dates correctly', function(){
+        test.maps('track-date');
+      });
     });
   });
 
@@ -139,21 +143,26 @@ describe('Criteo', function(){
         .end(done);
     });
 
-    it.only('should track Cart Viewed correctly', function(done){
+    it('should track Cart Viewed correctly', function(done){
       var data = test.fixture('track-cart-viewed');
       test
         .track(data.input)
         .sends(data.output)
         .expects(200)
-        .end(function(err, res) {
-          if (err) console.log({err: err});
-          if (res) console.log({res: res});
-          done();
-        });
+        .end(done);
     });
 
     it('should track Order Completed correctly', function(done){
       var data = test.fixture('track-order-completed');
+      test
+        .track(data.input)
+        .sends(data.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should track dates correctly', function(done){
+      var data = test.fixture('track-date');
       test
         .track(data.input)
         .sends(data.output)

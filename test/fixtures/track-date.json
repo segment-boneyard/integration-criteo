@@ -1,0 +1,70 @@
+{
+  "input": {
+    "type": "track",
+    "event": "Product Viewed",
+    "userId": "user-id",
+    "properties": {
+      "query": "Sedona AZ",
+      "location": "Sedona, AZ, United States",
+      "product_id": "3",
+      "name": "Hudson Hotel",
+      "checkin_date": "6/18/2016",
+      "checkout_date": "6/18/2016",
+      "currency": "usd",
+      "price": 18.99,
+      "quantity": 1,
+      "guests": 3,
+      "value": 18.99,
+      "booking_window": 3,
+      "number_of_nights": 10
+    },
+    "timestamp": "2015-11-09",
+    "context": {
+      "ip": "10.0.0.2",
+      "app": {
+        "namespace": "com.segment.TestApp",
+        "version": 2
+      },
+      "device": {
+        "manufacturer": "some-brand",
+        "type": "ios",
+        "advertisingId": "159358",
+        "id": "CECBF993-BA22-4BBF-9DE2-04DE813505CA"
+      },
+      "network": { "carrier": "some-carrier" },
+      "locale": "en-US",
+      "library": {
+        "name": "analytics-ios"
+      },
+      "os": {
+        "name": "iOS"
+      },
+      "referrer": {
+        "type": "iad",
+        "id": "some-id"
+      }
+    }
+  },
+  "output": {
+    "account": {
+      "an": "com.segment.TestApp",
+      "cn": "us",
+      "ln": "en"
+    },
+    "site_type": "aios",
+    "id": { "idfa": "CECBF993-BA22-4BBF-9DE2-04DE813505CA" },
+    "events": [
+    	{
+          "event": "viewProduct",
+          "ci": "user-id",
+          "product": "3"
+        },
+        {
+          "event": "vs",
+          "din": "2016-06-18",
+          "dout": "2016-06-18"
+        }
+    ],
+    "version": "s2s_v1.0.0"
+  }
+}

@@ -94,6 +94,10 @@ describe('Criteo', function(){
       it('should map events with dates correctly', function(){
         test.maps('track-date');
       });
+
+      it('should map events with correct country codes', function(){
+        test.maps('track-country');
+      });
     });
   });
 

@@ -102,6 +102,10 @@ describe('Criteo', function(){
       it('should map events with correct country codes', function(){
         test.maps('track-country');
       });
+
+      it('should map events with a name postfix', function(){
+        test.maps('track-namespace-postfix');
+      });
     });
   });
 

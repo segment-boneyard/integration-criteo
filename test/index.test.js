@@ -83,6 +83,10 @@ describe('Criteo', function(){
         test.maps('track-product-viewed');
       });
 
+      it.only('should map deep links', function(){
+        test.maps('track-deeplink');
+      });
+
       it('should map cart viewed', function(){
         test.maps('track-cart-viewed');
       });

@@ -1,0 +1,51 @@
+{
+  "input": {
+    "type": "track",
+    "event": "Deep Link Clicked",
+    "userId": "user-id",
+    "properties": {
+      "provider": "Branch Metrics",
+      "url": "brnch.io/1234" 
+    },
+    "timestamp": "2015-11-09",
+    "context": {
+      "ip": "10.0.0.2",
+      "app": {
+        "namespace": "com.segment.TestApp",
+        "version": 2
+      },
+      "device": {
+        "manufacturer": "some-brand",
+        "type": "ios",
+        "advertisingId": "159358",
+        "id": "CECBF993-BA22-4BBF-9DE2-04DE813505CF"
+      },
+      "network": { "carrier": "some-carrier" },
+      "locale": "en-US",
+      "library": {
+        "name": "analytics-ios"
+      },
+      "os": {
+        "name": "iOS"
+      },
+      "referrer": {
+        "type": "iad",
+        "id": "some-id"
+      }
+    }
+  },
+  "output": {
+    "account": {
+      "an": "com.segment.TestApp",
+      "cn": "us",
+      "ln": "en"
+    },
+    "site_type": "aios",
+    "id": {"idfa": "CECBF993-BA22-4BBF-9DE2-04DE813505CF"},
+    "events": {
+      "event": "appDeeplink",
+      "deeplink_uri": "brnch.io/1234"
+    },
+    "version": "s2s_v1.0.0"
+  }
+}

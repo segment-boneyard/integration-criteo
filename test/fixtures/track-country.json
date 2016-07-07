@@ -34,7 +34,7 @@
   "output": {
     "account": {
       "an": "com.segment.TestApp",
-      "cn": "eu",
+      "cn": "ao",
       "ln": "en"
     },
     "site_type": "aios",

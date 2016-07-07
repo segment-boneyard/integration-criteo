@@ -4,13 +4,16 @@ var assert = require('assert');
 var facade = require('segmentio-facade');
 var should = require('should');
 var mapper = require('../lib/mapper');
+var sinon = require('sinon');
 
 describe('Criteo', function(){
   var settings;
   var criteo;
   var test;
+  var sandbox;
 
   beforeEach(function(){
+    sandbox = sinon.sandbox.create();
     settings = {
       appId: '654757884637545'
     };
@@ -20,12 +23,13 @@ describe('Criteo', function(){
     criteo = new Criteo(settings);
     test = Test(criteo, __dirname);
     test.mapper(mapper);
+    sandbox.restore();
   });
 
   it('should have the correct settings', function(){
     test
       .name('Criteo')
-      .endpoint('http://widget.us.criteo.com/')
+      .endpoint('http://widget.')
       .channels(['server']);
   });
 
@@ -172,6 +176,20 @@ describe('Criteo', function(){
         .sends(data.output)
         .expects(200)
         .end(done);
+    });
+
+    it('should track events to the right data center', function(done){
+      var data = test.fixture('track-country');
+      var spy = sandbox.spy(criteo, 'get');
+
+      test
+        .track(data.input)
+        .sends(data.output)
+        .expects(200)
+        .end(function(err, res) {
+          assert(res[0].request.url === 'http://widget.eu.criteo.com/m/event?');
+          done();
+        });
     });
   });
 });

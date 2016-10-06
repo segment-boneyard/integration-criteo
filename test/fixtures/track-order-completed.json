@@ -39,7 +39,7 @@
       "device": {
         "manufacturer": "some-brand",
         "type": "ios",
-        "advertisingId": "159358",
+        "advertisingId": "7A3CBEA0-BDF5-11E4-8DFC-AA07A5B093DB",
         "id": "CECBF993-BA22-4BBF-9DE2-04DE813505CF"
       },
       "network": { "carrier": "some-carrier" },
@@ -63,8 +63,8 @@
       "ln": "en"
     },
     "site_type": "aios",
-    "id": { "idfa": "CECBF993-BA22-4BBF-9DE2-04DE813505CF" },
-    "events": { 
+    "id": { "idfa": "7A3CBEA0-BDF5-11E4-8DFC-AA07A5B093DB" },
+    "events": {
       "event": "trackTransaction",
       "ci": "user-id",
       "currency": "USD",

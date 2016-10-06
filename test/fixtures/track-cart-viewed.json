@@ -20,7 +20,7 @@
       "device": {
         "manufacturer": "some-brand",
         "type": "ios",
-        "advertisingId": "159358",
+        "advertisingId": "7A3CBEA0-BDF5-11E4-8DFC-AA07A5B093DB",
         "id": "CECBF993-BA22-4BBF-9DE2-04DE813505CA"
       },
       "network": { "carrier": "some-carrier" },
@@ -44,7 +44,7 @@
       "ln": "en"
     },
     "site_type": "aios",
-    "id": { "idfa": "CECBF993-BA22-4BBF-9DE2-04DE813505CA" },
+    "id": { "idfa": "7A3CBEA0-BDF5-11E4-8DFC-AA07A5B093DB" },
     "events": { 
       "event": "viewBasket",
       "ci": "user-id",

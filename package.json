@@ -1,5 +1,5 @@
 {
-  "name": "integration-integration-criteo",
+  "name": "integration-criteo",
   "version": "1.1.1",
   "private": true,
   "description": "integration-criteo server-side integration",

@@ -1,7 +1,6 @@
 {
-  "name": "integration-criteo",
-  "version": "1.1.1",
-  "private": true,
+  "name": "@segment/integration-criteo",
+  "version": "1.1.2",
   "description": "integration-criteo server-side integration",
   "author": "Segment <friends@segment.com>",
   "main": "lib/index.js",

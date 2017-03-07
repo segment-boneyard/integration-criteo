@@ -1,6 +1,6 @@
 {
   "name": "integration-criteo",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "private": true,
   "description": "integration-criteo server-side integration",
   "author": "Segment <friends@segment.com>",

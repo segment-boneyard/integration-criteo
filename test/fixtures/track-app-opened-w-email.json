@@ -42,10 +42,10 @@
     },
     "site_type": "aios",
     "id": { "idfa": "7A3CBEA0-BDF5-11E4-8DFC-AA07A5B093DB" },
-    "events": [
-      { "event": "viewHome", "ci": "user-id" },
-      { "event": "setHashedEmail", "email":["780f333ed11dc031fd5ab1edeff79b97"]}
+    "alternate_ids": [
+      { "type": "email", "value": "780f333ed11dc031fd5ab1edeff79b97", "hash_method": "md5" }
     ],
+    "events": { "event": "viewHome", "ci": "user-id" },
     "version": "s2s_v1.0.0"
   }
 }

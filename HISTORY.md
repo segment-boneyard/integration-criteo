@@ -1,4 +1,10 @@
 
+1.2.5 / 2017-04-17
+==================
+
+  * Merge pull request #21 from segment-integrations/fix-npm-publish
+  * fix npm publish
+
 1.2.3 / 2017-03-15
 ==================
 

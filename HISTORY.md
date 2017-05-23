@@ -1,4 +1,9 @@
 
+1.2.8 / 2017-05-23
+==================
+
+  * Remove screen mapper method to fix exceptions
+
 1.2.7 / 2017-05-23
 ==================
 
